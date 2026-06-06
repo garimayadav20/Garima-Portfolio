@@ -1,0 +1,94 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
+
+const projects = [
+  {
+    title: "Nexus Analytics Dashboard",
+    description: "A comprehensive SaaS dashboard for tracking real-time user metrics. Built with complex data visualizations, optimized rendering for large datasets, and a fully responsive layout.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Node.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Aura E-Commerce Platform",
+    description: "A high-performance headless e-commerce storefront featuring instantaneous page transitions, intelligent cart state management, and a seamless checkout flow.",
+    tech: ["Next.js", "GraphQL", "Stripe API", "Framer Motion"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Sync Team Workspace",
+    description: "A collaborative real-time workspace application allowing teams to share documents, manage tasks, and communicate via integrated websocket connections.",
+    tech: ["React", "Socket.io", "Express", "PostgreSQL", "Prisma"],
+    liveLink: "#",
+    githubLink: "#",
+  }
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="py-24 bg-white">
+      <div className="container mx-auto px-6 md:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-['Outfit']">Selected Work</h2>
+          <div className="w-16 h-1 bg-primary rounded-full mb-8"></div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, idx) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: idx * 0.15 }}
+              className="group rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 flex flex-col h-full"
+            >
+              <div className="h-48 bg-slate-200 relative overflow-hidden">
+                {/* Abstract placeholder for project image */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-50"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/40 rounded-full blur-2xl"></div>
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-slate-50/80 to-transparent"></div>
+              </div>
+              
+              <div className="p-8 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-slate-900 mb-3 font-['Outfit'] group-hover:text-primary transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tech.map((tech) => (
+                    <span key={tech} className="px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-medium text-slate-700">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex items-center gap-4 pt-4 border-t border-slate-200">
+                  <a href={project.liveLink} className="flex items-center text-sm font-semibold text-primary hover:text-blue-700 transition-colors">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </a>
+                  <a href={project.githubLink} className="flex items-center text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors">
+                    <Github className="w-4 h-4 mr-2" />
+                    Source
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
