@@ -18,7 +18,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-primary text-sm font-semibold mb-6">
-                Available for new opportunities
+                CSE Undergraduate · SRMCEM '27
               </span>
             </motion.div>
 
@@ -40,7 +40,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0"
             >
-              Hi, I'm Garima Yadav. A software developer specializing in crafting polished, high-performance web applications with modern technologies.
+              Hi, I'm Garima Yadav. A motivated Computer Science student passionate about software development and building real-world web applications with modern technologies.
             </motion.p>
 
             <motion.div
@@ -60,10 +60,10 @@ export default function Hero() {
                 <a href="https://github.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
+                <a href="https://www.linkedin.com/in/garima-yadav-8686b227a" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="mailto:garima@example.com" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
+                <a href="mailto:garimayadav.et@gmail.com" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>

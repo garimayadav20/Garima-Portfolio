@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -17,22 +17,18 @@ export default function Footer() {
         </div>
         
         <div className="flex items-center gap-6 mb-6 md:mb-0">
-          <a href="#" className="text-slate-400 hover:text-white transition-colors">
+          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
             <span className="sr-only">GitHub</span>
             <Github className="w-5 h-5" />
           </a>
-          <a href="#" className="text-slate-400 hover:text-white transition-colors">
+          <a href="https://www.linkedin.com/in/garima-yadav-8686b227a" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
             <span className="sr-only">LinkedIn</span>
             <Linkedin className="w-5 h-5" />
-          </a>
-          <a href="#" className="text-slate-400 hover:text-white transition-colors">
-            <span className="sr-only">Twitter</span>
-            <Twitter className="w-5 h-5" />
           </a>
         </div>
         
         <div className="text-sm text-slate-500">
-          &copy; {year} All rights reserved.
+          &copy; {year} Garima Yadav. All rights reserved.
         </div>
       </div>
     </footer>

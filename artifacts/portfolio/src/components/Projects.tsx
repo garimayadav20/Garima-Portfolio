@@ -4,26 +4,19 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Nexus Analytics Dashboard",
-    description: "A comprehensive SaaS dashboard for tracking real-time user metrics. Built with complex data visualizations, optimized rendering for large datasets, and a fully responsive layout.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Node.js"],
+    title: "Live Bus Location Tracking System",
+    description: "Developed a real-time tracking system to monitor bus locations and improve transportation efficiency. Designed a user-friendly interface to help passengers track buses and reduce waiting time. Enhanced safety and accessibility using location-based services.",
+    tech: ["JavaScript", "Node.js", "Express.js", "Maps API", "MongoDB"],
     liveLink: "#",
     githubLink: "#",
   },
   {
-    title: "Aura E-Commerce Platform",
-    description: "A high-performance headless e-commerce storefront featuring instantaneous page transitions, intelligent cart state management, and a seamless checkout flow.",
-    tech: ["Next.js", "GraphQL", "Stripe API", "Framer Motion"],
+    title: "E-Commerce Platform",
+    description: "Built a full-stack web application for online product browsing and purchasing. Developed the frontend using HTML, CSS, and JavaScript, and the backend using Node.js and Express.js. Integrated MongoDB and SQL databases for efficient data storage and management.",
+    tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "SQL"],
     liveLink: "#",
     githubLink: "#",
   },
-  {
-    title: "Sync Team Workspace",
-    description: "A collaborative real-time workspace application allowing teams to share documents, manage tasks, and communicate via integrated websocket connections.",
-    tech: ["React", "Socket.io", "Express", "PostgreSQL", "Prisma"],
-    liveLink: "#",
-    githubLink: "#",
-  }
 ];
 
 export default function Projects() {
@@ -37,11 +30,11 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-['Outfit']">Selected Work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-['Outfit']">Projects</h2>
           <div className="w-16 h-1 bg-primary rounded-full mb-8"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
@@ -52,7 +45,6 @@ export default function Projects() {
               className="group rounded-3xl bg-slate-50 border border-slate-100 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 flex flex-col h-full"
             >
               <div className="h-48 bg-slate-200 relative overflow-hidden">
-                {/* Abstract placeholder for project image */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-50"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/40 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-slate-50/80 to-transparent"></div>
