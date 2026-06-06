@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-80 h-80 rounded-full bg-blue-400/10 blur-3xl opacity-50 pointer-events-none" />
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col items-center md:items-start">
           
-          <div className="w-full md:w-3/5 text-center md:text-left">
+          <div className="w-full max-w-3xl text-center md:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,24 +69,6 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-full md:w-2/5 flex justify-center md:justify-end"
-          >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary to-blue-300 rounded-3xl rotate-6 opacity-20"></div>
-              <div className="absolute inset-0 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
-                <img
-                  src="/profile.png"
-                  alt="Garima Yadav"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
 
         </div>
       </div>
