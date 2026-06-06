@@ -48,12 +48,6 @@ export default function Navigation() {
               {link.name}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="px-5 py-2 text-sm font-medium bg-primary text-white rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/20"
-          >
-            Hire Me
-          </a>
         </nav>
 
         {/* Mobile Toggle */}
