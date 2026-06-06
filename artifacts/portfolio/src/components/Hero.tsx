@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import profilePhoto from "@assets/garima_pfp_1780741237430.jpeg";
 
 export default function Hero() {
@@ -56,6 +56,14 @@ export default function Hero() {
               >
                 View My Work
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="/Garima_Yadav_Resume.pdf"
+                download="Garima_Yadav_Resume.pdf"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-700 font-medium hover:border-primary hover:text-primary transition-colors shadow-sm group"
+              >
+                <Download className="mr-2 w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+                Resume
               </a>
               <div className="flex items-center gap-4 ml-4">
                 <a href="https://github.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
