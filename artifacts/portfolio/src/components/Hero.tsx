@@ -72,9 +72,13 @@ export default function Hero() {
                 <a href="https://www.linkedin.com/in/garima-yadav-8686b227a" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="mailto:garimayadav.et@gmail.com" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors">
+                <button
+                  onClick={() => window.open("mailto:garimayadav.et@gmail.com", "_blank")}
+                  className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors cursor-pointer"
+                  aria-label="Send email"
+                >
                   <Mail className="w-5 h-5" />
-                </a>
+                </button>
               </div>
             </motion.div>
           </div>
