@@ -83,7 +83,7 @@ export default function Hero() {
                 <img
                   src={profilePhoto}
                   alt="Garima Yadav"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top scale-150 origin-top"
                 />
               </div>
             </div>
