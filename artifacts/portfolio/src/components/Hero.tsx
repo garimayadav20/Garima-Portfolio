@@ -73,7 +73,7 @@ export default function Hero() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <button
-                  onClick={() => window.open("mailto:garimayadav.et@gmail.com", "_blank")}
+                  onClick={() => window.open("https://mail.google.com/mail/?view=cm&to=garimayadav.et@gmail.com", "_blank")}
                   className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-600 hover:text-primary shadow-sm border border-slate-100 transition-colors cursor-pointer"
                   aria-label="Send email"
                 >
