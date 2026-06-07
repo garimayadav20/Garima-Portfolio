@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+
 
 const projects = [
   {
@@ -66,12 +66,6 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-4 pt-4 border-t border-slate-200">
-                  <a href={project.githubLink} className="flex items-center text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors">
-                    <Github className="w-4 h-4 mr-2" />
-                    Source
-                  </a>
-                </div>
               </div>
             </motion.div>
           ))}
