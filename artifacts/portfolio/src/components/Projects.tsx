@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
@@ -67,10 +67,6 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-slate-200">
-                  <a href={project.liveLink} className="flex items-center text-sm font-semibold text-primary hover:text-blue-700 transition-colors">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </a>
                   <a href={project.githubLink} className="flex items-center text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors">
                     <Github className="w-4 h-4 mr-2" />
                     Source
